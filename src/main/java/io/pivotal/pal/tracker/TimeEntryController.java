@@ -9,8 +9,10 @@ import java.util.List;
 
 @RestController()
 public class TimeEntryController {
-    @Autowired
+
+    //@Autowired
     private TimeEntryRepository repo;
+
     public TimeEntryController(TimeEntryRepository timeEntryRepository) {
         this.repo = timeEntryRepository;
     }
