@@ -22,7 +22,7 @@ public class JdbcTimeEntryRepository implements TimeEntryRepository {
 
    // private DataSource dataSource = new D
 
-    public JdbcTimeEntryRepository(MysqlDataSource dataSource) {
+    public JdbcTimeEntryRepository(DataSource dataSource) {
         //dataSource.setUrl(System.getenv("SPRING_DATASOURCE_URL"));
         this.jdbcTemplate = new JdbcTemplate(dataSource);
     }
